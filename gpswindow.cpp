@@ -9,6 +9,7 @@ GpsWindow::GpsWindow(QWidget *parent) :
     ui(new Ui::GpsWindow)
 {
     ui->setupUi(this);
+    this->setWindowState(Qt::WindowMaximized);
 
     _gps = new GPS;
     _serial = NULL;
