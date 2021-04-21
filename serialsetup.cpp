@@ -6,7 +6,7 @@ serialSetup::serialSetup(QWidget *parent) :
     ui(new Ui::serialSetup)
 {
     ui->setupUi(this);
-
+    this->showFullScreen();
 
     Serial serial;
     QList<QSerialPortInfo> availablePorts = serial.listSerialPortsAvailable();
